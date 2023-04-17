@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -21,7 +21,8 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="bottom|right"
+                android:gravity="right|center_vertical"
+                android:paddingRight="10sp"
                 android:text="TextView"
                 android:textColor="#F8F7F7"
                 android:textSize="40sp" />
@@ -168,41 +169,59 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="132sp"
-            android:orientation="horizontal"
-            android:weightSum="4">
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="205sp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:orientation="vertical">
 
                 <Button
                     android:id="@+id/button7"
+                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Clear" />
+                    android:layout_height="match_parent"
+                    android:text="Clear"
+                    android:textSize="30sp" />
             </LinearLayout>
 
-            <Button
-                android:id="@+id/button3"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="30sp" />
+                android:orientation="horizontal"
+                android:weightSum="2">
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#00FFFFFF"
-                app:srcCompat="@drawable/add" />
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00FFFFFF"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="30sp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00FFFFFF"
+                    app:srcCompat="@drawable/add" />
+            </LinearLayout>
 
         </LinearLayout>
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300sp"
+        android:layout_marginTop="160sp"
+        android:layout_marginEnd="0sp"
+        android:layout_marginBottom="50sp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/equal" />
+</RelativeLayout>
