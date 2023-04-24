@@ -25,7 +25,7 @@
                 android:paddingRight="10sp"
                 android:text="TextView"
                 android:textColor="#F8F7F7"
-                android:textSize="40sp" />
+                android:textSize="60sp" />
 
         </LinearLayout>
 
